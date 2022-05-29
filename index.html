@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Chris Heyes</title>
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <nav class="nav center">
+      <ul class="nav__list centre">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#demos">Demos</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button> -->
+      
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <div class="about center">
+		<a href="https://www.linkedin.com/in/chris-heyes-9a837b29/"><img class="portrait" src="images/portrait_small.jpg" alt="portrait"></a>
+      <h1>Hi, I'm <span class="about__name">Chris Heyes.</span></h1>
+      <h2 class="about__role">Full-stack Software Bootcamp Student</h2>
+      <p class="about__desc">
+        I'm a former archaeologist with a passion for tech - I just love all things old and new!
+        I am currently a student on Code Nation's Master Course, a 12-week bootcamp that covers full-stack web development.
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" style="height: 280px";>
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills_img">HTML<img src="images/HTML logo.png" /></li>
+        <li class="skills_img">CSS<img src="images/CSS logo.png" /></li>
+        <li class="skills_img">JavaScript<img src="images/JavaScript logo.png" /></li>
+        <li class="skills_img">GitHub<img src="images/GitHub logo.png" /></li>
+        <li class="skills_img">MongoDB<img src="images/mongodb.png" /></li>
+        <li class="skills_img">Express.js<img src="images/Express_js logo.png" /></li>
+        <li class="skills_img">React<img src="images/React logo.png" /></li>
+        <li class="skills_img">Node<img src="images/nodejs logo.png" /></li>
+      </ul>
+    </section>
+
+    <!-- Demos -->
+    <section id="demos" class="section projects">
+      <h2 class="section__title">Demos</h2>
+      <div class="project">
+        <br />
+        <h3>Grocery Assistant</h3>
+        <p class="project__description">
+          A shopping list app - my first React.js project
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">JavaScript</li>
+          <li class="project__stack-item">React</li>
+          <li class="project__stack-item">CSS</li>
+        </ul>
+        <a href="https://github.com/cdheyes/Grocery-Assistant" aria-label="source code" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+        <a href="https://grocery-assistant.netlify.app/" aria-label="live preview" class="link link--icon">
+          <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+      <br />
+
+      <div class="project">
+        <br />
+        <h3>Virtual Drum Kit</h3>
+        <p class="project__description">
+          An early project using the DOM and event triggers
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">HTML</li>
+          <li class="project__stack-item">CSS</li>
+          <li class="project__stack-item">JavaScript</li>
+        </ul>
+
+        <a href="https://github.com/cdheyes/Virtual-Drum-Kit" aria-label="source code" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+        <a href="https://dom-drum-kit.netlify.app/" aria-label="live preview" class="link link--icon">
+          <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:cdheyes@gmail.com">
+        <span class="btn btn--outline">email</span>
+      </a>
+      <a href="https://github.com/cdheyes">
+        <span class="btn btn--outline">github</span>
+      </a>
+      <a href="https://www.linkedin.com/in/chris-heyes-9a837b29/">
+        <span class="btn btn--outline">linkedin</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.google.co.uk/" class="link footer__link">
+      Google
+    </a>
+  </footer>
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
